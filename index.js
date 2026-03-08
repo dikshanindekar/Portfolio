@@ -30,6 +30,11 @@ projects.forEach(project => {
     });
 });
 
+function openProject(url) {
+    window.open(url, '_blank');
+}
+
 // Dynamic Footer Year
 const yearEl = document.getElementById("year");
+
 if (yearEl) yearEl.textContent = new Date().getFullYear();
