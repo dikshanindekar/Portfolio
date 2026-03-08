@@ -26,7 +26,7 @@ skillCards.forEach(card => {
 const projects = document.querySelectorAll('.project-list li');
 projects.forEach(project => {
     project.addEventListener('click', () => {
-        alert(`You clicked on: ${project.innerText.split(':')[0]}\n\nYou can replace this alert with a modal or project preview.`);
+        showModal(`You clicked on: ${project.innerText.split(':')[0]}\n\nYou can replace this alert with a modal or project preview.`);
     });
 });
 
@@ -38,3 +38,4 @@ function openProject(url) {
 const yearEl = document.getElementById("year");
 
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
