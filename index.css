@@ -204,4 +204,22 @@ footer {
     padding: 3rem;
     background: #020617;
     height: 15rem;
+
+}
+
+@media(max-width:768px){
+
+nav{
+display:none;
+flex-direction:column;
+background:#050505;
+position:absolute;
+top:60px;
+right:0;
+width:100%;
+}
+
+nav.active{
+display:flex;
+}
 }
